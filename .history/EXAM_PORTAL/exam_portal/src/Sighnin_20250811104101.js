@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+
+
+function Sighnin(){
+    const [username, setusername]=useState("");
+    const [password, setpassword]=useState("");
+    const [message, setmessage]=useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('http://localhost:5000/signin', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
+            const data = await response.json();
+            if (response.ok) {
+                setmessage(`Signin successful: ${data.message}`);
+            } else {
+                setmessage(`Error: ${data.error}`);
+            }
+        } catch (error) {
+            setmessage(`Error: ${error.message}`);  
+            console.error('Error during signin:', error);
+        }
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <input type="text" placeholder="username" value={username} onChange={(e)=>setusername(e.target.value)}/>
+            <input type="password" placeholder="password" value={password} onChange={(e)=>setpassword(e.target.value)}/>
+            <button type="submit">Sighnin</button>
+            <p>{message}</p>
+        </form>
+    );
+}
+export default Sighnin;

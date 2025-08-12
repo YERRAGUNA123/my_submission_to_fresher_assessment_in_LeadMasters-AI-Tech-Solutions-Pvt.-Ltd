@@ -1,0 +1,54 @@
+Project Instruction Document
+
+Company: LeadMasters AI Tech Solutions Pvt. Ltd.
+Project Type: Fresher Selection Assessment
+Document Type: Project Brief
+
+1. Objective
+The goal of this selection project is to evaluate the candidate’s ability to build a full-stack application based on core engineering fundamentals and best practices. The candidate is expected to develop a functional exam-taking interface (student-side only), which tests their skills in React.js, backend APIs, and database integration using a selected technology stack.
+2. Deliverables
+- A functional full-stack application (student-side exam module only)
+- Code hosted in a public GitHub repository
+- A Postman collection or clear API testing instructions
+- Shared GitHub repository link for review
+3. Project Scope
+The project must include the following features:
+- User registration and login with JWT authentication
+- “Start Exam” interface that fetches randomized questions from backend
+- Display of MCQs with options
+- Navigation through questions (Next/Previous functionality)
+- Countdown timer (e.g., 30 minutes) with auto-submit capability
+- Submit Exam functionality that calculates score
+- Result display page
+4. Technology Stack Options
+Candidates may choose from the following stacks:
+Option 1:
+- Frontend: React.js
+- Backend: Node.js with Express.js
+- Database: MongoDB
+Option 2:
+- Frontend: React.js
+- Backend: Python with FastAPI or Python with Django, or Python with Flask
+- Database: PostgreSQL or MySQL
+5. Evaluation Criteria
+- Correct and secure implementation of JWT-based authentication
+- Logical backend structure and modular API design
+- Clean and responsive UI implementation using React.js
+- Proper use of React hooks and state management
+- Functional and synchronized timer logic
+- Complete documentation and clarity of code structure
+6. Scope Exclusions
+Do NOT implement the following:
+- Admin panel
+- Question bank management or upload system
+- Analytics or reports dashboard
+- Webcam proctoring or surveillance features
+7. Suggested Time Allocation
+This project is designed to be completed within 2–5 working days depending on the skill level of the candidate.
+8. Submission Guidelines
+- All code should be pushed to a public GitHub repository
+- A README.md file must be included with setup instructions
+- Include a Postman collection or curl commands for API testing
+- Submit the GitHub repository link to: support@leadmasters.ai
+9. Final Note
+This is a practical challenge designed to evaluate your real-world development skills. Use of tools like ChatGPT or GitHub Copilot is permitted for support, but direct copy-paste submissions will be easily identifiable. Focus on problem-solving, clean code, and clarity of implem
