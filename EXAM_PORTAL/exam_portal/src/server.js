@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect('mongodb+srv://username:password@myproj1.fqwpjfp.mongodb.net/exam_portal?retryWrites=true&w=majority&appName=myproj1', {
+mongoose.connect(here comes ur mongodb cluster database code like something u will find this in ur mongodb account then after locate it to the database path u can achieve this by asking doubts to chatgpt or youtube, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
@@ -169,4 +169,5 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 module.exports = app;
+
 
