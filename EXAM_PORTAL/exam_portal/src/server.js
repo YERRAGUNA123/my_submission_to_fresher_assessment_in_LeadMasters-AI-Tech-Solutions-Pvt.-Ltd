@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect('mongodb+srv://gunadatascientist:zYOrfHLb8RC8kPAy@myproj1.fqwpjfp.mongodb.net/exam_portal?retryWrites=true&w=majority&appName=myproj1', {
+mongoose.connect('mongodb+srv://username:password@myproj1.fqwpjfp.mongodb.net/exam_portal?retryWrites=true&w=majority&appName=myproj1', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
@@ -169,3 +169,4 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 module.exports = app;
+
